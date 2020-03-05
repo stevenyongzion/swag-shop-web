@@ -6,6 +6,8 @@ class HttpService {
             fetch('http://localhost:3004/product')
             .then(response => {
                 resolve(response.json());                
+            }).catch(err => {
+                reject(err);
             })
         });
 
