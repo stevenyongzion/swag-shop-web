@@ -9,13 +9,15 @@ const http = new HttpService();
 class App extends Component {
 
   constructor(props) {
-    super(props);
+      super(props);
 
-    this.state = { products: []};
+      this.state = {
+        products: []
+      };
 
-    this.loadData = this.loadData.bind(this);
-    this.productList = this.productList.bind(this);
-    this.loadData();
+      this.loadData = this.loadData.bind(this);
+      this.productList = this.productList.bind(this);
+      this.loadData();
   }
 
   loadData = () => {
