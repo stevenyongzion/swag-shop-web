@@ -6,7 +6,7 @@ class ProductCondensed extends Component {
         return (
             <li className="list-group-item pc-condensed">
                 <a className="btn btn-outline-danger">X</a>
-                <p>{this.props.product.title} | <b>${this.props.product.price}</b></p>
+                {this.props.product.title} | <b>${this.props.product.price}</b>
             </li>
 
         );
